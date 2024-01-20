@@ -1,14 +1,18 @@
-import styled from '@emotion/styled';
-
-export const Container = styled.div`
+.container {
+  font-family: 'Oxygen';
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
   padding: 80px;
   flex-direction: column;
-`;
-
-export const Title = styled.h2`
+  color: #8000ff;
+}
+.main_title {
   margin: 0;
-`;
+  font-size: 48px;
+}
+.title {
+  margin: 0;
+  font-size: 36px;
+}

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Title } from './App.styled';
 import { ContactForm } from '../ContactForm/ContactForm';
 import { ContactList } from 'components/ContactList/ContactList ';
 import { ContactsFilter } from 'components/Filter/Filter';
 import { nanoid } from 'nanoid';
+import { toast } from 'react-toastify';
+import s from './App.module.css';
 export const App = () => {
   const [filter, setFilter] = useState('');
   const [contacts, setContacts] = useState(() => {
@@ -29,7 +30,13 @@ export const App = () => {
     if (!oldContact) {
       setContacts(prevState => [...prevState, newObject]);
     } else {
-      window.alert(`${newObject.name} is already in contacts.`);
+      toast.info(`${newObject.name} is already in contacts.`, {
+        style: {
+          color: 'white',
+          background: '#7b68ee',
+          borderRadius: '20px',
+        },
+      });
     }
   };
   const handleDeleteContact = id => {
@@ -46,10 +53,10 @@ export const App = () => {
   };
   const filteredUsers = getFilteredData();
   return (
-    <Container>
-      <h1>Phonebook</h1>
+    <div className={s.container}>
+      <h1 className={s.main_title}>Phonebook</h1>
       <ContactForm onSubmit={handleAddContact} />
-      <Title>Contacts</Title>
+      <h2 className={s.title}>Contacts</h2>
       <ContactsFilter
         onChangeFilter={handleChangeFilterStr}
         filterStr={filter}
@@ -58,6 +65,6 @@ export const App = () => {
         contacts={filteredUsers}
         onDeleteContact={handleDeleteContact}
       />
-    </Container>
+    </div>
   );
 };

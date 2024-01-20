@@ -1,0 +1,22 @@
+.list {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 400;
+  font-weight: bold;
+  & button {
+    width: 100px;
+    padding: 4px;
+    border-radius: 20px;
+    border: 2px solid #7b68ee;
+    color: #8000ff;
+    font-size: 18px;
+    font-family: 'Oxygen';
+    font-weight: 600;
+    &:hover,
+    :focus {
+      background-color: #8000ff;
+      color: white;
+    }
+  }
+}

@@ -32,7 +32,7 @@ export const ContactForm = ({ onSubmit }) => {
   return (
     <form className={s.form} onSubmit={handleSubmit}>
       <label className={s.label}>
-        Name{' '}
+        Name:
         <input
           type="text"
           name="name"
@@ -43,7 +43,7 @@ export const ContactForm = ({ onSubmit }) => {
         />
       </label>
       <label className={s.label}>
-        Number{' '}
+        Number:
         <input
           type="tel"
           name="number"
