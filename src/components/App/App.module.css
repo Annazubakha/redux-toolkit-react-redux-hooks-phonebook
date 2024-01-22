@@ -1,12 +1,13 @@
 .container {
-  font-family: 'Oxygen';
+  font-family: 'Fira Sans';
+  font-style: oblique;
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
   padding: 80px;
   flex-direction: column;
-  color: #8000ff;
+  color: #ad3e02;
 }
 .main_title {
   margin: 0;

@@ -5,23 +5,24 @@
   font-size: 24px;
   align-items: center;
   font-weight: bold;
-  border: 5px solid #7b68ee;
+  border: 5px solid #da5f2d;
   padding: 20px 100px;
   border-radius: 20px;
-  color: #8000ff;
+  color: #ad3e02;
+  box-shadow: 5px 5px 5px #da5f2ded;
 }
 .form_btn {
   width: 140px;
   padding: 8px;
   border-radius: 20px;
-  border: 2px solid #7b68ee;
-  color: #8000ff;
+  border: 2px solid #da5f2d;
+  color: #ad3e02;
   font-size: 18px;
-  font-family: 'Oxygen';
+  font-family: 'Fira Sans';
   font-weight: 600;
   &:hover,
   :focus {
-    background-color: #8000ff;
+    background-color: #da5f2d;
     color: white;
   }
 }
@@ -30,16 +31,13 @@
   flex-direction: column;
   gap: 15px;
   & input {
-    border: 2px solid #7b68ee;
-    color: #8000ff;
+    border: 2px solid #da5f2d;
+    color: #da5f2d;
     width: 300px;
     height: 30px;
     outline: none;
     border-radius: 20px;
     padding-left: 30px;
-    &:hover {
-      background-color: #8000ff;
-      color: white;
-    }
+    box-shadow: 5px 5px 5px #da5f2ded;
   }
 }

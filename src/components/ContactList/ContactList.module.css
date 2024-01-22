@@ -8,14 +8,14 @@
     width: 100px;
     padding: 4px;
     border-radius: 20px;
-    border: 2px solid #7b68ee;
-    color: #8000ff;
+    border: 2px solid #da5f2d;
+    color: #da5f2d;
     font-size: 18px;
-    font-family: 'Oxygen';
+    font-family: 'Fira Sans';
     font-weight: 600;
     &:hover,
     :focus {
-      background-color: #8000ff;
+      background-color: #da5f2d;
       color: white;
     }
   }

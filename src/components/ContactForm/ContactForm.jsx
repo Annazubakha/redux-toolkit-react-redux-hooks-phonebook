@@ -34,6 +34,7 @@ export const ContactForm = ({ onSubmit }) => {
       <label className={s.label}>
         Name:
         <input
+          minlength="4"
           type="text"
           name="name"
           id={nanoid()}
@@ -45,6 +46,7 @@ export const ContactForm = ({ onSubmit }) => {
       <label className={s.label}>
         Number:
         <input
+          pattern="[0-9]"
           type="tel"
           name="number"
           required
