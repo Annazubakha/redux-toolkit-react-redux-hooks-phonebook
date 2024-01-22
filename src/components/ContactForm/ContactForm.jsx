@@ -34,6 +34,9 @@ export const ContactForm = ({ onSubmit }) => {
       <label className={s.label}>
         Name:
         <input
+          placeholder="Anna Zubakha"
+          pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)"
+          title="Please enter name like this: Anna Zubakha."
           minlength="4"
           type="text"
           name="name"
@@ -46,7 +49,9 @@ export const ContactForm = ({ onSubmit }) => {
       <label className={s.label}>
         Number:
         <input
-          pattern="[0-9]"
+          placeholder="123-456-7890"
+          title="Please enter number like this: 123-456-7890."
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
           type="tel"
           name="number"
           required

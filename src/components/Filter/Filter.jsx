@@ -4,6 +4,7 @@ export const ContactsFilter = ({ onChangeFilter, filter }) => {
     <label className={s.label}>
       Find contacts by name:
       <input
+        placeholder="Please enter the name of the contact to find it"
         type="text"
         name="filter"
         value={filter}

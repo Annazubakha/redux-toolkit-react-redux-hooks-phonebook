@@ -29,14 +29,9 @@ export const App = () => {
     );
     if (!oldContact) {
       setContacts(prevState => [...prevState, newObject]);
+      toast.success(`${newObject.name} was added to contacts successfully.`);
     } else {
-      toast.info(`${newObject.name} is already in contacts.`, {
-        style: {
-          color: 'white',
-          background: '#7b68ee',
-          borderRadius: '20px',
-        },
-      });
+      toast.error(`${newObject.name} is already in contacts.`);
     }
   };
   const handleDeleteContact = id => {
