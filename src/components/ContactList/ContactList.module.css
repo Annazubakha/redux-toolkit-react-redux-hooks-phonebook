@@ -13,6 +13,7 @@
     font-size: 18px;
     font-family: 'Fira Sans';
     font-weight: 600;
+    margin-left: 8px;
     &:hover,
     :focus {
       background-color: #da5f2d;
